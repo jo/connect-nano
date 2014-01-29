@@ -23,6 +23,11 @@ module.exports = function couch(config) {
     function patch(obj) {
       var api = {};
       Object.keys(obj).forEach(function(key) {
+        if (key === 'config') { 
+          api.config = obj.config;
+          return;
+        }
+
         switch (typeof obj[key]) {
           case 'function':
             api[key] = function() {
