@@ -7,7 +7,7 @@ var nock = require('nock');
 var request = require('request');
 var connect = require('connect');
 
-var nano = require('../lib/connect-nano.js');
+var nano = require('..');
 
 var app = function(middleware, options, done) {
   if (typeof options === 'function') {

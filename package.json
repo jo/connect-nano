@@ -1,7 +1,7 @@
 {
   "name": "connect-nano",
   "description": "Provide req.nano, passing session cookies to CouchDB and back again.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/jo/connect-nano",
   "author": {
     "name": "Johannes J. Schmidt",
@@ -21,24 +21,29 @@
       "url": "https://github.com/jo/connect-nano/blob/master/LICENSE-MIT"
     }
   ],
-  "main": "lib/connect-nano",
+  "main": "index.js",
   "engines": {
-    "node": ">= 0.8.0"
+    "node": ">= 0.8.0",
+    "node": ">= 0.10.0"
   },
   "scripts": {
-    "test": "grunt nodeunit"
+    "test": "nodeunit test/*_test.js && rm -f tmp",
+    "jshint": "jshint -c .jshintrc index.js test/*.js"
   },
   "devDependencies": {
-    "grunt-contrib-jshint": "~0.1.1",
-    "grunt-contrib-nodeunit": "~0.1.2",
-    "grunt-contrib-watch": "~0.2.0",
-    "grunt-contrib-clean": "~0.4.1",
-    "grunt": "~0.4.1",
     "request": "~2.21.0",
     "connect": "~2.7.11",
-    "nock": "~0.18.2"
+    "nock": "~0.18.2",
+    "nodeunit": "~0.8.4",
+    "jshint": "~2.4.3"
   },
-  "keywords": ["web", "connect", "middleware", "couchdb", "nano"],
+  "keywords": [
+    "web",
+    "connect",
+    "middleware",
+    "couchdb",
+    "nano"
+  ],
   "dependencies": {
     "nano": "~3.3.8"
   }
