@@ -23,7 +23,6 @@
   ],
   "main": "index.js",
   "engines": {
-    "node": ">= 0.8.0",
     "node": ">= 0.10.0"
   },
   "scripts": {
@@ -45,6 +44,6 @@
     "nano"
   ],
   "dependencies": {
-    "nano": "~4.4.0"
+    "nano": "^6.1.4"
   }
 }
