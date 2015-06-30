@@ -1,7 +1,7 @@
 {
   "name": "connect-nano",
   "description": "Provide req.nano, passing session cookies to CouchDB and back again.",
-  "version": "0.1.4",
+  "version": "1.0.0",
   "homepage": "https://github.com/jo/connect-nano",
   "author": {
     "name": "Johannes J. Schmidt",
